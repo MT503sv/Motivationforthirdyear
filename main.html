@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="motivation.png" type="image/x-icon">
+    <title>Página de Selección de Imágenes</title>
+    <style>
+        /* Estilo general de la página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8; /* Fondo claro y suave */
+            color: #333; /* Color de texto oscuro para mayor legibilidad */
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Estilo del título principal */
+        h1 {
+            font-size: 36px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Estilo del texto de inspiración */
+        h4 {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        /* Estilo del contenedor de botones */
+        .btn-container {
+            margin-top: 30px;
+        }
+
+        /* Estilo de los botones */
+        .btn {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Efecto hover para los botones */
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        /* Contenedor de las imágenes */
+        .image-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Estilo de las imágenes */
+        .image-container img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover; /* Ajusta las imágenes para que no se deformen */
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efecto hover para las imágenes */
+        .image-container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Enlaces dentro de las imágenes */
+        .image-container a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>De parte mía</h1>
+    <h4>
+        La verdad es que los admiro profundamente. Todo lo que han logrado, cada uno de ustedes, llegar hasta este punto, es simplemente impresionante. El esfuerzo, la dedicación y la pasión que han puesto en lo que hacen, es algo que no puedo dejar de reconocer. Para mí, cada uno de ustedes es una fuente de inspiración. Me demuestran día a día que, con trabajo y perseverancia, es posible llegar lejos.
+    </h4>
+
+    <h4>
+        Ustedes son la prueba viviente de que los sueños no tienen límites, de que cada paso, aunque pequeño, nos acerca un poco más a lo que deseamos. Ver lo que han conseguido me motiva, me empuja a seguir adelante, a dar lo mejor de mí, a no rendirme, a seguir luchando por lo que me apasiona.
+    </h4>
+
+    <h4>
+        Gracias por ser ese faro de esperanza y por mostrarme que, con dedicación y amor por lo que hacemos, somos capaces de alcanzar lo que pareciera inalcanzable. No hay barreras, solo oportunidades, y ustedes me enseñan a no tener miedo a soñar en grande y a esforzarme por hacerlo realidad.
+    </h4><h2>De parte de Mateo Menjívar</h2>
+    
+
+    <h1>Selecciona una imagen</h1>
+    <div class="btn-container">
+        <a href="https://www.programiz.com/online-compiler/5gfQvfzxjuzzz" class="btn">Imagen de Python</a>
+        <a href="MotivationJS.html" class="btn">Imagen de JavaScript</a>
+    </div>
+
+    <div class="image-container">
+        <a id="python" href="https://www.programiz.com/online-compiler/5gfQvfzxjuzzz">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Imagen de Python">
+        </a>
+        <a id="javascript" href="MotivationJS.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Imagen de JavaScript">
+        </a>
+    </div>
+
+</body>
+</html>
